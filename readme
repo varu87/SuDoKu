@@ -1,0 +1,21 @@
+							========================
+								SUDOKU
+							========================
+
+How to play
+----------------
+1. On page load, a 9X9 grid partially filled with random numbers will be displayed.
+2. The general puropse is to fill the grid with numbers from 1 to 9 such that there is only one instance of a particular number in a row, column or a 3X3 square.
+3. There are four controls provided in the game:
+    a) New: To create a new puzzle grid.
+    b) Reset: Remove all the entries made in the puzzle grid.
+    c) Flag: Flag a cell in case multiple entries are possible for the current cell.
+    d) Undo: Remove the last entry. Hold the button to remove all the entries utill the last flagged cell.
+
+Application files:
+--------------------
+There are two projects in the application:
+1. SuDoKuGenerator: This creates the random Sudoku puzzle.
+2. SuDoKu: This generates the UI and all the front end logic to present the puzzle grid.
+
+The SuDoKuGenerator needs to be built first and the corresponding dll should be referred to the SuDoKu project before building the same.

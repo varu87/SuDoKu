@@ -1,0 +1,185 @@
+﻿@media only screen and (min-width: 320px){
+  #SuDoKuGrid{
+    width: 300px;
+	height: 400px;
+  }
+  
+  #SuDoKuGrid input[type=text]
+  {
+      font-size: 21px;      
+  }
+  
+  #SuDoKuGrid td
+  {
+      width: 30px;
+      height: 40px;
+  }
+  
+  #SuDoKuControls
+  {
+      width: 300px;
+  }
+  
+  #SuDoKuControls input
+  {
+      width: 50px;
+      height: 50px;
+  }
+}
+
+@media only screen and (min-width: 640px){
+  #SuDoKuGrid{
+    width: 500px;
+	height: 600px;
+  }
+  
+  #SuDoKuGrid input[type=text]
+  {
+      font-size: 35px;      
+  }
+  
+  #SuDoKuGrid td
+  {
+      width: 50px;
+      height: 60px;
+  }
+  
+  #SuDoKuControls
+  {
+      width: 500px;
+  }
+  
+  #SuDoKuControls input
+  {
+      width: 50px;
+      height: 55px;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  #SuDoKuGrid{
+    width: 500px;
+	height: 600px;
+  }
+  
+  
+  #SuDoKuGrid input[type=text]
+  {
+      font-size: 35px;      
+  }
+  
+  #SuDoKuGrid td
+  {
+      width: 50px;
+      height: 60px;
+  }
+  
+  #SuDoKuControls
+  {
+      width: 500px;
+  }
+  
+  #SuDoKuControls input
+  {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  #SuDoKuGrid
+  {
+    width: 600px;
+	height: 600px;
+  }  
+  
+  #SuDoKuGrid input[type=text]
+  {
+      font-size: 48px;      
+  }
+  
+  #SuDoKuGrid td
+  {
+      width: 60px;
+      height: 60px;
+  }
+  
+  #SuDoKuControls
+  {
+      width: 600px;
+  }
+  
+  #SuDoKuControls input
+  {
+      width: 60px;
+      height: 50px;
+  }
+}
+
+#SuDoKuGrid
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    table-layout: fixed;
+}
+
+#SuDoKuGrid td
+{
+    border: 1px solid gray;
+    margin: 0;
+    padding: 0;
+}
+
+#SuDoKuGrid td:nth-child(3n + 3)
+{
+    border-right: 2px solid black;
+}
+
+#SuDoKuGrid tr:nth-child(3n + 3)
+{
+    border-bottom: 2px solid black;
+}
+
+#SuDoKuGrid tr:first-child
+{
+    border-top: 2px solid black;
+}
+
+#SuDoKuGrid tr td:first-child
+{
+    border-left: 2px solid black;
+}
+
+#SuDoKuGrid input[type=text]
+{
+    width: 92%;
+    height: 100%;
+    padding: 4%;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+
+#SuDoKuControls
+{
+    text-align: center;
+}
+
+#SuDoKuControls input
+{
+    margin-top: 2px;
+}
+
+.error
+{
+    background-color: #FF0000 !important;    
+    
+}
+
+.restorePoint
+{
+    background-color: #FFFFFF !important;
+}
