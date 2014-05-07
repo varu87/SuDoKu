@@ -98,13 +98,6 @@ function ValidateCell(id, holesCount, event) {
         return;
     }
 
-    /*if (restorePointArray.length > 0) {
-        index = restorePointArray.length - 1;
-        if ($(cellArray[index]).val() !== '')
-            cellArray[index] += ',';
-        cellArray[index] += cell;
-    }*/
-
     if (data !== '') {
         cellArray.push(cell);
 
@@ -221,40 +214,12 @@ function SetRestorePoint() {
 
     var cell = '#' + cellInFocus;
     if ($(cell).hasClass('restorePoint')) {
-        //restorePointArray.splice(restorePointArray.indexOf(cell), 1);
         $(cell).removeClass('restorePoint');
     }
     else {
-        //restorePointArray.push(cell);
         $(cell).addClass('restorePoint');
-        //if ($(cell).val() !== '') {
-        //    cellArray[restorePointArray.length - 1] = cell;
-        //}
     }
 }
-
-/*function UndoTillRestore() {
-    if (typeof cellInFocus === "undefined")
-        return;
-
-    var cell = '#' + cellInFocus;
-    if ($(cell).hasClass('restorePoint')) {
-        restorePointArray.splice(restorePointArray.indexOf(cell), 1);
-        $(cell).removeClass('restorePoint');
-    }
-
-    if (restorePointArray.length == 0 || cellArray.length == 0)
-        return;
-
-    var cells = cellArray[restorePointArray.length - 1].split(',');
-
-    for (var i = 0; i < cells.length; i++) {
-        $(cells[i]).val('');
-        $(cells[i]).removeClass('restorePoint');
-    }
-
-    restorePointArray.splice(restorePointArray.length - 1, 1);
-}*/
 
 function UndoTillFlag() {
     if (cellArray !== 'undefined' && cellArray.length > 0) {
